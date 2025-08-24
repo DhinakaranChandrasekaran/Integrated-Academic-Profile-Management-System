@@ -1,70 +1,127 @@
-# Getting Started with Create React App
+**📘 Integrated Academic Profile Management System
+📖 Project Overview**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Integrated Academic Profile Management System (IAPMS) is a centralized web-based platform developed to streamline academic profile management for colleges. It allows students to create and maintain detailed academic portfolios, while administrators can oversee and validate student information. The system provides an efficient way to showcase student achievements, manage departmental details, and track placement activities.
 
-## Available Scripts
+**✨ Key Features
+🏫 College Information**
 
-In the project directory, you can run:
+Home page with college banner, about section, chairman and principal details.
 
-### `npm start`
+Dedicated department pages with faculty details and Head of Department profiles.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**👩‍🎓 Student Profile Management**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Comprehensive student profiles including:
 
-### `npm test`
+Personal Details (Reg No, Name, Dept, Address, Academic Year, Profile Photo)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Academic Records (SSLC, HSC, CGPA, SGPA for each semester)
 
-### `npm run build`
+Skills (programming languages, tools)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Certifications (with certificate upload and download options)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Projects (title, domain, languages, abstract, demo video, report, status)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Resume (upload, view, and download)
 
-### `npm run eject`
+Publications (title, journal, authors, certificate, and paper PDF)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Placement Status (linked with college placement portal)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Contact Information (email, phone number)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**🏆 Toppers Section**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+View toppers by batch and department.
 
-## Learn More
+Highlights top 3 students with photo, name, CGPA, and academic year.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**📂 Domain-Based Sorting**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Sort and filter students by:
 
-### Code Splitting
+Certificate domain
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Project domain
 
-### Analyzing the Bundle Size
+Name
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+CGPA
 
-### Making a Progressive Web App
+Provides easy access for recruiters and faculty to view specific profiles.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**📝 Profile Update Workflow**
 
-### Advanced Configuration
+Students can update their details via update form.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Data stored in MongoDB and files in Firebase storage.
 
-### Deployment
+Automatic email notifications sent to admin for approval.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Admin approves → Student notified of successful update.
 
-### `npm run build` fails to minify
+**🔑 Admin Panel**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Approve or reject student profile updates.
+
+Manage projects, certifications, publications, resumes, and placement records.
+
+Ensure all student data is verified before publishing.
+
+**🏗️ System Architecture**
+
+Frontend (User Interface)
+
+Developed with React.js and CSS for a clean, responsive interface.
+
+Students, faculty, and recruiters can easily navigate and access information.
+
+Backend (Business Logic)
+
+Implemented with Spring Boot for handling APIs and profile update workflows.
+
+Manages authentication, student data, and notification triggers.
+
+Database (Data Storage)
+
+MongoDB used for storing structured and semi-structured student data.
+
+**Collections:** Students, Departments, Staff, Projects, Certifications, Publications, Placement.
+
+Cloud Storage (Media Files)
+
+Firebase used for storing and retrieving large files like resumes, certificates, videos, and reports.
+
+Notification System
+
+Email alerts sent to admin and students on profile update requests and approvals.
+
+**📌 Benefits**
+
+Centralized and digital management of student profiles.
+
+Easy access for placement officers and recruiters to evaluate student achievements.
+
+Streamlined process for students to maintain academic portfolios.
+
+Improved transparency and accuracy in placement tracking.
+
+Reduces manual work in handling resumes, certificates, and project details.
+
+**🚀 Future Enhancements**
+
+Role-based access for students, faculty, admin, and recruiters.
+
+AI-powered student recommendation system for recruiters.
+
+Analytics dashboard for placement statistics and performance trends.
+
+Mobile application support for easy student access.
+
+**📖 Project Overview**  
+
+The Integrated Academic Profile Management System (IAPMS) is a centralized web-based platform...  
+
+👉 *Note: This project is currently in progress and features are being implemented step by step.*  
